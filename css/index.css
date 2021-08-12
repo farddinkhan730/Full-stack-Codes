@@ -1,9 +1,21 @@
 body{
     background-color: antiquewhite;
+    text-align: center;
 }
 h1{
     border: 2px solid black;
     border-radius: 9px;
     text-align: center;
     border-bottom-color: cadetblue;
+}
+div{
+    border: 2px solid grey;
+    width: 512px;
+    border-radius: 120vw;
+    padding: 34px;
+    text-align: center;
+}
+p{
+    text-decoration: rebeccapurple;
+    text-align: center;
 }
