@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical 7</title>
     <style>
-        /* *{
-            margin: 0;
-            padding: 0;
-        } */
         .header{
             text-align: center;
             background-color: rgb(94, 90, 90);
@@ -28,12 +24,16 @@
         .sec1{
             text-align: center;
         }
-        .container1
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
+      
+        .circle{
+            height: 180px;
+            width: 180px;
+            background-color: rgb(204, 204, 13);
+            border-radius: 50%;
+            /* padding: 12px; */
+            margin: 12px 49px; 
+            display: inline-flex;
+
         }
         .sec1 img{
             width: 25%;
@@ -64,7 +64,7 @@
             padding: 29px 0px;
 
         }
-        .container3 p {
+        .container3 div {
             border: 2px solid rgba(255, 68, 0, 0.808);
             background-color: rgba(255, 68, 0, 0.774);
             text-align: center;
@@ -72,18 +72,16 @@
             margin: 12px 19px;
         }
         .sec3{
-            
             text-align: center;
-        }
-        #h1{
-            display: flex;
         }
         .box{
             text-align: center;
             background-color: rgba(255, 0, 0, 0.829);
-            width: 395px; 
+            width: 275px; 
             height: 275px;
-            margin: 12px 32px;
+            margin: 32px;
+        
+            display: inline-flex;
         }
         .sec4{
             text-align: center;
@@ -105,15 +103,12 @@
     </div>
     <div class="sec1">
         <h2>Section 1</h2>
-        
-        <div class="container1">
+           <div class="circle"></div>
+           <div class="circle"></div>
+           <div class="circle"></div>
+      
 
-            <img src="../assets/Round-shape.jpg" alt="">
-            <img src="../assets/Round-shape.jpg" alt="">
-            <img src="../assets/Round-shape.jpg" alt="">
-            <img src="../assets/Round-shape.jpg" alt="">
-
-        </div>
+      
     </div>
     <div class="sec2">
         <h2>Section 2</h2>
@@ -124,21 +119,20 @@
 
             <div class="container3">
                 
-                <p class="artical-1">Artical 1</p>
-                <p class="artical-2">Artical 2</p>
-                <p class="artical-3">Artical 3</p>
+                <div class="artical-1">Artical 1</div>
+                <div class="artical-2">Artical 2</div>
+                <div class="artical-3">Artical 3</div>
             </div>
 
     </div>
     <div class="sec3">
         <h2>Section 3</h2>
-        <div id="h1">
 
-            <p class="box"></p>
-            <p class="box"></p>
-            <p class="box"></p>
-            <p class="box"></p>
-        </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+    
     </div>
     <div class="sec4">
         <h2>Section 4</h2>
