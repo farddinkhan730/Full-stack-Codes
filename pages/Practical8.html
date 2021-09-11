@@ -14,19 +14,22 @@
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
       #header {
+        /* border: 3px solid red; */
         text-align: center;
-        background-color: rgb(94, 90, 90);
+        background-color: rgb(2, 2, 2);
         color: white;
         padding: 20px;
-        position: fixed;
-        width: 100%;
+        /* width:100%; */
         top: 0px;
+        position:sticky;
+        opacity: 0.9;
       }
       nav ul {
         display: flex;
         justify-content: center;
+        opacity: 0.8;
       }
-
+      
       .list {
         list-style: none;
         margin: 6px 62px;
@@ -45,6 +48,7 @@
         border-radius: 9px;
       }
       .banner {
+        /* border: 3px solid yellow; */
         background-color: rgba(31, 168, 192, 0.733);
         color: white;
         background: url(../assets/photo-1521175776577-f8e0c1e5ecb7.jfif);
@@ -54,13 +58,14 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: left;
         text-align: start;
-        width: 100%;
+        /* width: 100%; */
         height: 670px;
       }
       .banner h2 {
         padding: 120px;
       }
       .sec1 {
+        /* border: 3px solid brown; */
         text-align: center;
         background-color: white;
         margin: 72px 0;
@@ -70,9 +75,9 @@
         margin: 42px;
       }
       .sec2 {
+        /* border:  2px solid pink; */
         text-align: center;
         /* display: inline-block; */
-        width: 100%;
       }
       .con {
         display: inline-flex;
@@ -86,24 +91,25 @@
         text-align: left;
         padding: 12px 12px;
         background-color: rgba(128, 128, 128, 0.87);
+        overflow: hidden;
       }
       .container2 h2 {
         color: white;
       }
       .container2 p {
         padding: 22px 0;
-        color: white;
+        color: rgb(15, 15, 15);
         font-size: 18px;
         font-family: sans-serif;
       }
       .container3 {
         width: 50%;
+        /* border:  5px solid black; */
       }
       .container3 div {
 
         /* background-color: rgba(255, 68, 0, 0.774); */
         text-align: center;
-        width: 100%;
         height: 135px;
         margin: 12px;
       }
@@ -117,6 +123,7 @@
         background-image: url(../assets/project4.jpg);
       }
       .sec3 {
+        /* border: 3px solid green; */
           margin-top: 72px ;
         text-align: center;
     }
@@ -127,10 +134,11 @@
         font-size: 37px;
       }
       .container {
-        display: flex;
+        /* border: 2px solid black ; */
         justify-content: center;
         align-items: center;
         padding: 50px;
+        display: flex;
     }
     .card {
         background: rgb(177, 174, 174);
@@ -166,10 +174,12 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .sec4 {
+      /* border:  3px solid darkblue; */
 
       text-align: center;
     }
     .footer {
+      /* border:  3px solid rgb(94, 90, 90); */
         color: white;
         background-color: rgb(241, 153, 167);
         padding: 25px;
@@ -179,6 +189,71 @@
     #bot{
         display: block;
         margin-top: 23PX;
+
+    }
+    /*  Responsive Website Work */
+    @media screen and (max-width:1232px) {
+      .sec3>.container>.card{
+        overflow:auto;
+      }
+      .sec2>.con>.container2{
+        overflow:auto ;
+      }
+    }
+    @media screen and (max-width:990px) {
+
+      .container{
+        flex-direction: column;
+      }
+      .sec3 .container .card{
+        /* flex-direction: column; */
+        width: 65%;
+      }
+      .sec2 .con{
+        display:flex;
+        flex-direction: column;
+        /* width: 100%; */
+      }
+      .sec2 .con .container2{
+        width:fit-content;
+      }
+      .sec2 .con .container3{
+        width:100%;
+      }
+      #header{
+        background-color: black;
+        opacity: 0.6;
+        position:absolute;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      .navigation-bar ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        
+      }
+
+      .navigation-bar ul li{
+        border-bottom: 2px solid goldenrod;
+        width: 25%;
+        border-radius: 9px;
+        /* border-radius: 0px; */
+      }
+      .navigation-bar ul li a:hover{
+        background: grey;
+        border:hidden;
+      }
+      .navigation-bar ul li:hover{
+        background-color: gray;
+        /* border-radius: 0px; */
+      }
+      .banner h2{
+        line-height: 250px;
+        /* overflow:scroll; */
+      }
     }
     </style>
   </head>
@@ -209,6 +284,7 @@
     <div class="sec2" >
       <h2  id="sec2" >About Us</h2>
       <div class="con">
+
         <div class="container2">
           <h2 class="main">About Projects</h2>
           <p>
@@ -237,14 +313,13 @@
         </div>
 
         <div class="container3">
-          <div class="artical1">
-            <h1>Project-1</h1>
-          </div>
+          <div class="artical1"><h1>Project-1</h1></div>
           <div class="artical2"><h1>Project-2</h1></div>
           <div class="artical3"><h1>Project-3</h1></div>
         </div>
       </div>
     </div>
+
     <div class="sec3">
         
       <h2  id="s3"> Technologies Used</h2>
