@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #container{
+            width: 500px;
+            height: 190px;
+            margin:  auto;
+            text-align: center;
+            margin-top: 170px;
+            background-color:pink;
+            padding: 86px 12px;
+
+        }
+        #lb{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        button
+        {
+            margin-top: 19px;
+            padding: 12px 23px;
+            text-transform: uppercase;
+            background-color: white;
+
+        }
+        input{
+            padding: 8px 22px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container" onmouseover="mouse()"
+    onmouseleave="mouseleve()">
+        <!-- <label for="but" id="lb">This is an Example of javaScript Events</label> -->
+        <h1 for="but" id="lb">This is an Example of javaScript Events</h1>
+        <br>
+        <button for="click" id="but" onclick="fun2()">Click Me</button>
+        <br>
+        <br>
+        <input type="text" id="click" onkeydown="fun1()" >
+    </div>
+    <script>
+        function mouse(){
+        document.getElementById('container').style.backgroundColor="yellow";
+            // b.style.backgroundcolor="Yellow";
+            // console.log(b);
+        }
+        function mouseleve(){
+            document.getElementById('container').style.backgroundColor="pink";
+            var d=document.getElementById('lb');
+            d.innerHTML='This is an Example of javaScript Events';
+
+
+        }
+        function fun1(){
+            var v=document.getElementById('click');
+            v.style.outline="none";
+            v.style.border="2px solid red";
+
+        }
+        function fun2(){
+            var d=document.getElementById('lb');
+            d.innerHTML='Beta-labs';
+        }
+    </script>
+    
+</body>
+</html>
