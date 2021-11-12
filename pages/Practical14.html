@@ -21,44 +21,59 @@
         color: yellow;
         margin: 0 42px 0 42px;
         display: inline-block;
-    
       }
-      h1{
-          font-size: 54px;
-          line-height: 149px;
+      h1 {
+        font-size: 54px;
+        line-height: 149px;
       }
     </style>
   </head>
   <body>
     <h1>Counter</h1>
-    <button type="button" id="neg">-</button>
+    <button type="button" onclick="clickme1()" id="neg">-</button>
     <p id="para">0</p>
-    <button type="button" id="plus">+</button>
+    <button type="button" onclick="clickme()" id="plus">+</button>
 
     <script>
-        var b = document.getElementById("neg");
-        var b1 = document.getElementById("plus"),
-        count = 0;
-        if(count==0){
-            b.style.background="transparent";
+      var count = 0;
+      if (count == 0) {
+        document.getElementById("neg").style.background = "transparent";
+      }
+      function clickme() {
+        count++;
+        document.getElementById("para").innerHTML = count;
+        document.getElementById("neg").style.background = "yellow";
+      }
+      function clickme1() {
+        if (count > 0) count--;
+        document.getElementById("para").innerHTML = count;
+        if (count == 0) {
+          document.getElementById("neg").style.background = "transparent";
         }
+        // var b = document.getElementById("neg");
+        // var b1 = document.getElementById("plus"),
+        // count = 0;
+        // if(count==0){
+        //     b.style.background="transparent";
+        // }
 
-        b.onclick = function () {
-            if (count > 0) {
-            count -= 1;
-          }
-          document.getElementById('para').innerHTML= count;
-          if(count==0){
-            b.style.background="transparent";
-        }
-        };
-        b1.onclick = function () {
-         
-            count += 1;
-          
-          document.getElementById('para').innerHTML =count;
-          b.style.background="yellow";
-        };
+        // b.onclick = function () {
+        //     if (count > 0) {
+        //     count -= 1;
+        //   }
+        //   document.getElementById('para').innerHTML= count;
+        //   if(count==0){
+        //     b.style.background="transparent";
+        // }
+        // };
+        // b1.onclick = function () {
+
+        //     count += 1;
+
+        //   document.getElementById('para').innerHTML =count;
+        //   b.style.background="yellow";
+        // };
+      }
     </script>
   </body>
 </html>
