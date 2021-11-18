@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Practical</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80");
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .side{
+            /* width: fit-content; */
+            width: 62px;
+            height: 100vh;
+            /* display:inline-flex; */
+            position:absolute;
+            left: 0;
+            text-align: center;
+        }
+        #m{
+            filter: invert(100%);
+            font-size: 23px;
+            margin-top: 42px;
+        }
+        .bottom{
+            background-color: yellow;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 32px  12px;
+            padding-bottom: 62px;
+        }
+        .bottom i{
+            font-size: 16px;
+        }
+        header{
+            color: white;
+            margin-left: 62px;
+            display: flex;
+            width:95.9%;
+            height: 62px;
+            padding-top: 12px;
+            padding-left: 12px;
+        }
+        header ul{
+            display: inline-flex;
+            margin-left: 22px;
+            margin-top: 10px;
+
+        }
+        header h1{
+            margin-left: 12px;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            margin: 32px 22px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+
+        }
+        .btn{
+            background-color: yellow;
+            padding: 7.5px 26px;
+            border: 2px solid black;
+            border-radius: 4px;
+            color: black;
+            position: absolute;
+            right: 0;
+            margin:10px  72px;
+
+        }
+        .banner{
+            color: white;
+            margin-left:132px;
+            margin-top: 72px;
+        }
+        .banner h1{
+            z-index: 1;
+            font-size: 49px;
+        }
+        .banner span{
+            color: yellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="side">
+        <i class="fa fa-bars" id="m"></i>   
+        <br>    
+        <i class="fa fa-search-plus" id="m"></i>
+        <div class="bottom">
+
+            <i class="fa fa-facebook-square"></i>
+            <br>
+            <br>
+            <i class="fa fa-instagram"></i>
+            <br>
+            <br>
+            <i class="	fa fa-twitter"></i>
+            <br>
+            <br>
+            <i class="	fa fa-google-plus-official"></i>
+        </div>
+    </div>
+    <header>
+            <h1>IMIVE</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RECAPE</a></li>
+            </ul>
+            <p class="btn">Sign up</p>
+    </header>
+    <section class="banner">
+        <h1>Food <span>doesn't have <br> a religion</span>. it is a religion.</h1>
+    </section>
+</body>
+</html>
